@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Combo Gamer Meetion",
+      "image": "/images/products/product-4.png",
+      "rating": 4,
+      "price": 380
+    },
+    {
+      "id": 2,
+      "name": "Msi GeFore Gtx 1650",
+      "image": "/images/products/product-5.png",
+      "rating": 5,
+      "price": 800
+    },
+    {
+      "id": 3,
+      "name": "Dualsense PS5",
+      "image": "/images/products/product-6.png",
+      "rating": 5,
+      "price": 450
+    },
+    {
+      "id": 4,
+      "name": "Cadeira Gamer Frizzi",
+      "image": "/images/products/product-7.png",
+      "rating": 4,
+      "price": 1750
+    },
+    {
+      "id": 5,
+      "name": "iPhone 14 Pro Max 512GB",
+      "image": "/images/products/product-8.png",
+      "rating": 5,
+      "price": 4000
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy S23 Ultra 1TB",
+      "image": "/images/products/product-9.png",
+      "rating": 5,
+      "price": 4000
+    },
+    {
+      "id": 7,
+      "name": "Asus Rog Phone 3 Gamer",
+      "image": "/images/products/product-10.png",
+      "rating": 4,
+      "price": 6500
+    },
+    {
+      "id": 8,
+      "name": "Xiaomi 13 Ultra",
+      "image": "/images/products/product-11.png",
+      "rating": 4,
+      "price": 2000
+    },
+    {
+      "id": 9,
+      "name": "Xbox Series X",
+      "image": "/images/products/product-12.png",
+      "rating": 5,
+      "price": 3500
+    },
+    {
+      "id": 10,
+      "name": "Racingwheel GT480 Ferrari",
+      "image": "/images/products/product-13.png",
+      "rating": 5,
+      "price": 1400
+    },
+    {
+      "id": 11,
+      "name": "PlayStation 5",
+      "image": "/images/products/product-14.png",
+      "rating": 5,
+      "price": 3500
+    },
+    {
+      "id": 12,
+      "name": "Gaming Desktop RTX 3090Ti",
+      "image": "/images/products/product-15.png",
+      "rating": 5,
+      "price": 8500
+    }
+  ]
+}
