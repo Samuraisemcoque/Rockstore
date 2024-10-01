@@ -28,7 +28,7 @@ button {
   cursor: pointer;
 }
 
-/* START NAV*/ 
+/* START NAV 
 .nav{
   background-color: #fff;
   padding: 1rem;
@@ -122,6 +122,131 @@ nav ul li:hover{
 .menu-button{
   display: none;
 }
+ END NAVBAR */
+
+/* START NAV*/ 
+.nav {
+  background-color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 10px 0px 10px #ebebeb;
+  z-index: 1;
+}
+
+.nav .inner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.Logo {
+  color: var(--primary-color);
+}
+
+.Logo span {
+  color: var(--dark-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 2;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul li .dropdown li {
+  padding: 5px 0;
+}
+
+nav ul li .dropdown li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navs-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navs-icon-container svg {
+  height: 1.5rem;
+}
+
+.navs-icon-container .shopping-cart {
+  position: relative;
+}
+
+.navs-icon-container .shopping-cart .products-count {
+  content: "";
+  position: absolute;
+  background-color: #f00;
+  width: 1rem;
+  height: 1rem;
+  bottom: -8px;
+  left: -8px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--dark-color);
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.search-input-container input {
+  border: none;
+  outline: none;
+}
+
+.search-input-container svg {
+  height: 1rem;
+  color: #808080;
+}
+
+nav ul li:hover {
+  transform: translateY(-4px);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.menu-button {
+  display: none;
+}
+
 /* END NAVBAR */
 
 /* START HEADER */
@@ -584,3 +709,162 @@ hr {
 }
 
 /* END SIDEBAR CART*/
+
+/* Estilos para a página de checkout */
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.checkout-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.checkout-container ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.checkout-container ul li:last-child {
+  border-bottom: none;
+}
+
+.checkout-container button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-container button:hover {
+  background-color: #218838;
+}
+
+/* Estilos para a página de login e cadastro */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.container .link-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container .link-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.container .button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* src/index.css */
+.page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.page-container input[type="text"],
+.page-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.page-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.page-container button:hover {
+  background-color: #0056b3;
+}
