@@ -4,13 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "createdb": "cross-env NODE_ENV=development npx sequelize db:create",
+    "createmigrate": "npx sequelize-cli migration:generate --name ",
+    "migrate": " cross-env NODE_ENV=development npx sequelize-cli db:migrate ",
+    "migrateundo": "cross-env NODE_ENV=development npx sequelize db:migrate:undo",
+    "migrateundoall": "cross-env NODE_ENV=development npx sequelize db:migrate:undo:all",
+    "createseeddev": "cross-env NODE_ENV=development npx sequelize seed:generate --name"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
   }
 }
