@@ -109,6 +109,11 @@ import RegisterEmployeePage from './components/pages/RegisterEmployeePage';
 import OrderHistoryPage from './components/pages/OrderHistoryPage';
 import ProfilePage from './components/pages/ProfilePage';
 import ProtectedRoute from './components/ProtectedRoute';
+import AboutPage from './components/pages/AboutPage';
+import SACPage from './components/pages/SACPage';
+import ContactPage from './components/pages/ContactPage';
+import TermsPage from './components/pages/TermsPage';
+import PrivacyPolicyPage from './components/pages/PrivacyPolicyPage';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -262,6 +267,11 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/sac" element={<SACPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </main>
         <Footer />

@@ -868,3 +868,39 @@ hr {
 .page-container button:hover {
   background-color: #0056b3;
 }
+
+/* Estilos específicos para cada página */
+.about-page h1 {
+  color: #2c3e50;
+}
+
+.sac-page h1 {
+  color: var(--dark-secondary-color);
+}
+
+.contact-page h1 {
+  color: var(--dark-secondary-color);
+}
+
+.terms-page h1 {
+  color: var(--dark-secondary-color);
+}
+
+.privacy-policy-page h1 {
+  color: var(--dark-secondary-color);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 920px) {
+  .page-container {
+    padding: 15px;
+  }
+
+  .page-container h1 {
+    font-size: 28px;
+  }
+
+  .page-container p {
+    font-size: 14px;
+  }
+}

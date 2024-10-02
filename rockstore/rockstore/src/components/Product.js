@@ -55,22 +55,23 @@ export default function Product({
 
   return (
     <div className="product">
-        <img src={image} alt={name} />
-        <p className="name">{name}</p>
-        <p className="rate">★★★★★</p>
-        <p className="price">
-            {price} <span>BRL</span>
-        </p>
-        <div className="buttons">
-            <button onClick={handleBuyNow} className="btn-icon">
-                <span>Comprar Agora</span>
-                <FontAwesomeIcon icon={faMoneyBill}/>
-            </button>
-            <button onClick={() => addProductToCart(id)} className="btn-icon add-to-cart-btn">
-                <span>Adicionar ao Carrinho</span>
-                <FontAwesomeIcon icon={faCartShopping}/>
-            </button>
-        </div> 
+      <img src={image} alt={name} />
+      <p className="name">{name}</p>
+      <p className="rate">★★★★★</p>
+      <p className="price">
+        {price} <span>BRL</span>
+      </p>
+      <div className="buttons">
+        <button onClick={handleBuyNow} className="btn-icon">
+          <span>Comprar Agora</span>
+          <FontAwesomeIcon icon={faMoneyBill}/>
+        </button>
+        <button onClick={() => addProductToCart(id)} className="btn-icon add-to-cart-btn">
+          <span>Adicionar ao Carrinho</span>
+          <FontAwesomeIcon icon={faCartShopping}/>
+        </button>
+      </div> 
     </div>
   );
 }
+

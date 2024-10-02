@@ -76,11 +76,14 @@ export default function Navbar({ setShowSidebarcart, selectedProducts, user }) {
             <li>
               <Link to="/products">Produtos</Link>
             </li>
-            <li>
+            <li className="about-menu">
               <Link to="/about">Sobre</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contato</Link>
+              <ul className="dropdown">
+                <li><Link to="/sac">SAC</Link></li>
+                <li><Link to="/contact">Fale Conosco</Link></li>
+                <li><Link to="/terms">Termos de Aceite</Link></li>
+                <li><Link to="/privacy-policy">Políticas de Privacidade</Link></li>
+              </ul>
             </li>
             {user && (
               <li className="account-menu">
