@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Header'
-import SidebarCart from '../SidebarCart'
+// import SidebarCart from '../SidebarCart'
 import ProductsList from '../ProductsList'
 import ExclusiveSection from '../ExclusiveSection'
 import ReviewsList from '../ReviewsList'
@@ -9,10 +9,10 @@ import ReviewsList from '../ReviewsList'
 export default function HomePage({ products, addProductToCart,}) {
   return (
     <> 
-    
-    
+
+
     <Header />
-    
+
 
     <div className="page-inner-content">
       <div className="section-title">
@@ -24,7 +24,7 @@ export default function HomePage({ products, addProductToCart,}) {
          products={products}/>
       </div>
     </div>
-  
+
   <ExclusiveSection />
   <ReviewsList /></>
   )
